@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "type": {
+                "type": "string",
+                "enum": [
+                    "object",
+                    "enum"
+                ],
+                "default": "object"
+            },
+            "description": {
+                "type": "string"
+            },
+            "unknownEnumValue": {
+                "type": "string"
+            },
+            "enumValues": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "val": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "val",
+                        "description"
+                    ]
+                }
+            },
+            "properties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "$ref": "#/definitions/DataType"
+                            },
+                            "optional": {
+                                "type": "boolean",
+                                "default": false
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "description"
+                        ]
+                    }
+                }
+            }
+        },
+        "required": [
+            "description"
+        ]
+    },
+    "definitions": {
+        "DataType": {
+            "anyOf": [
+                {
+                    "const": "boolean"
+                },
+                {
+                    "const": "integer"
+                },
+                {
+                    "const": "double"
+                },
+                {
+                    "const": "string"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}
