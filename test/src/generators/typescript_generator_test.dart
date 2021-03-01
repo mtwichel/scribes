@@ -1,4 +1,4 @@
-import 'package:scribe/scribe.dart';
+import 'package:scribes/scribes.dart';
 import 'package:test/test.dart';
 
 void main() {

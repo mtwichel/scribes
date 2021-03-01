@@ -7,9 +7,9 @@ import 'version.dart';
 /// {@template scribe_command_runner}
 /// A [CommandRunner] for the Scribe CLI.
 /// {@endtemplate}
-class ScribeCommandRunner extends CommandRunner<void> {
+class ScribesCommandRunner extends CommandRunner<void> {
   /// {@macro scribe_command_runner}
-  ScribeCommandRunner({Logger logger})
+  ScribesCommandRunner({Logger logger})
       : _logger = logger ?? Logger(),
         super('scribe', '✍️ scribe \u{2022} translate your objects!') {
     argParser.addFlag(

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:args/command_runner.dart';
-import 'package:scribe/src/logger.dart';
+import 'package:scribes/src/logger.dart';
 
 class InitCommand extends Command<void> {
   InitCommand({Logger logger}) : _logger = logger;

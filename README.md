@@ -1,13 +1,13 @@
-<h1 align="center" style="border-bottom: 0px">Scribe ✍️</h1>
+<h1 align="center" style="border-bottom: 0px">✍️✍️ Scribes ✍️✍️</h1>
 
 <p align="center">
-<a href="https://pub.dev/packages/scribe"><img src="https://img.shields.io/pub/v/scribe.svg" alt="Pub"></a>
+<a href="https://pub.dev/packages/scribe"><img src="https://img.shields.io/pub/v/scribes.svg" alt="Pub"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
 </p>
 
 ---
 
-> Scribe allows developers to define their data objects in YAML, then transcribe them into other languages.
+> Like a team of middle-ages monks, scribes allows developers to define their whole library of data objects, then transcribe them into other languages.
 
 **NOTE! This package is pre-release and may not work as intended. Use at your own risk.**
 
@@ -16,19 +16,19 @@
 Install with the following command:
 
 ```bash
-$ pub global activate scribe
+$ pub global activate scribes
 ```
 
 Then run:
 
 ```bash
-$ scribe init
+$ scribes init
 ```
 
 which will create example objects. Then run:
 
 ```bash
-$ scribe transcribe
+$ scribes transcribe
 ```
 
 Which will generate dart and typescript objects.
@@ -37,14 +37,14 @@ Which will generate dart and typescript objects.
 
 You can define objects in a YAML file ending in `.objects.yaml`. Use the format described in [Defining Objects](#defining-objects).
 
-You can also download the [schema.json file](https://raw.githubusercontent.com/mtwichel/scribe/main/schema.json) and add it to your IDE for auto-completion.
+You can also download the [schema.json file](https://raw.githubusercontent.com/mtwichel/scribes/main/schema.json) and add it to your IDE for auto-completion.
 
 ### Generating files
 
 To generate source code, run the following command:
 
 ```bash
-$ scribe transcribe
+$ scribes transcribe
 ```
 
 **Options**

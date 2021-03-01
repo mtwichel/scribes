@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:scribe/scribe.dart';
+import 'package:scribes/scribes.dart';
 
 void main() {
   group('DartGenerator', () {

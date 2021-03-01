@@ -1,5 +1,5 @@
-import 'package:scribe/src/command_runner.dart';
+import 'package:scribes/src/command_runner.dart';
 
 void main(List<String> args) async {
-  await ScribeCommandRunner().run(args);
+  await ScribesCommandRunner().run(args);
 }
