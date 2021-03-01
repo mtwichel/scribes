@@ -1,3 +1,6 @@
-## 1.0.0
+## 0.0.1-dev.1
 
-- Initial version, created by Stagehand
+- Initial dev release!
+  - Support for generating Dart and Typescript files
+  - Support for defining objects as yaml
+  - Basic CLI commands for operation
