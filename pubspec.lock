@@ -233,7 +233,7 @@ packages:
     source: hosted
     version: "0.16.1"
   io:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: io
       url: "https://pub.dartlang.org"
@@ -534,7 +534,7 @@ packages:
     source: hosted
     version: "0.7.5"
   yaml:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: yaml
       url: "https://pub.dartlang.org"
