@@ -18,6 +18,7 @@ class ScribeCommandRunner extends CommandRunner<void> {
       help: 'Print the current version.',
     );
     addCommand(GenerateCommand(logger: _logger));
+    addCommand(InitCommand(logger: _logger));
   }
 
   final Logger _logger;

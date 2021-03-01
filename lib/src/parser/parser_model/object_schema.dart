@@ -35,19 +35,10 @@ class ObjectSchema {
         return EnumValueSchema.fromJson(value);
       }).toList();
 
-      if (!(json['unknownEnumValue'] is String)) {
-        throw CheckedFromJsonException(
-          json,
-          'unknownEnumValue',
-          'ObjectSchema',
-          'unknownEnumValue must be a String',
-        );
-      }
-
       return ObjectSchema(
         description: json['description'],
         enumValues: values,
-        unknownEnumValue: json['unknownEnumValue'],
+        unknownEnumValue: json['unknownEnumValue'] ?? 'Unknown',
         objectType: 'enum',
       );
     } else {

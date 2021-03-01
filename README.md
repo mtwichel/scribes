@@ -1,3 +1,5 @@
+<h1 align="center" style="border-bottom: 0px">Scribe ✍️</h1>
+
 <p align="center">
 <a href="https://pub.dev/packages/scribe"><img src="https://img.shields.io/pub/v/scribe.svg" alt="Pub"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
@@ -5,24 +7,49 @@
 
 ---
 
-Scribe allows developers to define their data objects in YAML, then transcribe them into other languages.
+> Scribe allows developers to define their data objects in YAML, then transcribe them into other languages.
 
 ## Quick Start
 
-### Installing
+Install with the following command:
 
 ```bash
-# Activate from pub.dev
 $ pub global activate scribe
 ```
 
-### Setup
+Then run:
+
+```bash
+$ scribe init
+```
+
+which will create example objects. Then run:
+
+```bash
+$ scribe transcribe
+```
+
+Which will generate dart and typescript objects.
 
 ## Usage
 
 You can define objects in a YAML file ending in `.objects.yaml`. Use the format described in [Defining Objects](#defining-objects).
 
-You can also download the [schema.json file](https://github.com/mtwichel/scribe/schema.json) and add it to your IDE for auto-completion.
+You can also download the [schema.json file](https://raw.githubusercontent.com/mtwichel/scribe/main/schema.json) and add it to your IDE for auto-completion.
+
+### Generating files
+
+To generate source code, run the following command:
+
+```bash
+$ scribe transcribe
+```
+
+**Options**
+
+- `--no-typescript` and `--no-dart`: flags that can be added if you wish to omit generating certain languages.
+- `--objects [PATH]`: An alternate path to the folder your objects files are stored.
+- `--dart-path [PATH]` and `--typescript-path [PATH]`: A alternate path to the folder where different object files should be generated.
 
 ## Defining Objects
 
@@ -32,7 +59,7 @@ Data objects are objects that can be represented as JSON, with a description. Fo
 
 ```yaml
 Customer:
-  description: The customer object as returned by Firestore.
+  description: A customer registered to the loyalty program.
   properties:
     - id:
         type: string
