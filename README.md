@@ -9,6 +9,8 @@
 
 > Scribe allows developers to define their data objects in YAML, then transcribe them into other languages.
 
+**NOTE! This package is pre-release and may not work as intended. Use at your own risk.**
+
 ## Quick Start
 
 Install with the following command:
