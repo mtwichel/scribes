@@ -1,7 +1,7 @@
 <h1 align="center" style="border-bottom: 0px">✍️✍️ Scribes ✍️✍️</h1>
 
 <p align="center">
-<a href="https://pub.dev/packages/scribe"><img src="https://img.shields.io/pub/v/scribes.svg" alt="Pub"></a>
+<a href="https://pub.dev/packages/scribes"><img src="https://img.shields.io/pub/v/scribes.svg" alt="Pub"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
 </p>
 
